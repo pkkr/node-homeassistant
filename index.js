@@ -18,7 +18,7 @@ class Homeassistant extends EventEmitter {
 
     this.config = Object.assign(defaultConfig, options)
 
-    this.url = `${this.config.protocol}://${this.config.host}:${this.config.port}/api/websocket`
+    this.url = `${this.config.protocol}://${this.config.host}:${this.config.port}/core/websocket`
     this.retriesLeft = this.config.retryCount
     this.promises = {}
     this.states = []
